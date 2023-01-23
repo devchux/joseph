@@ -89,6 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  color: #282828;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -157,11 +158,11 @@ html body nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 2.4rem 0 0;
+  margin: 2.3rem 0 1.7rem 0;
 }
 @media only screen and (min-width: 376px) {
   html body nav {
-    margin: 3.8rem 0 0.015rem 0;
+    margin: 3rem 0 2.3rem 0;
   }
 }
 html body nav .logo-side p {
@@ -576,6 +577,190 @@ html body .about-me-section .testimonials .testimonials-scroll .testimonials-ove
     flex-grow: 1;
     flex-basis: 0;
   }
+}
+html body .herconomy-section .product-banner {
+  display: flex;
+  height: 68.5rem;
+}
+html body .herconomy-section .product-banner .left-side {
+  width: 57%;
+  background-image: url("/assets/images/hand.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html body .herconomy-section .product-banner .left-side::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: rgba(40, 40, 40, 0.9);
+  width: 100%;
+  height: 100%;
+}
+html body .herconomy-section .product-banner .left-side .text-content {
+  position: relative;
+}
+html body .herconomy-section .product-banner .left-side .text-content h3 {
+  font-weight: 700;
+  font-size: 6.6rem;
+  line-height: 8rem;
+  color: #ffffff;
+}
+html body .herconomy-section .product-banner .left-side .text-content p {
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: #ffffff;
+}
+html body .herconomy-section .product-banner .right-side {
+  width: 43%;
+  height: 100%;
+  background-image: url("/assets/images/iphone-in-hand.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html body .product-intro .container .product-intro-content {
+  display: flex;
+  padding: 5.7rem 0;
+  gap: 3.4rem;
+}
+html body .product-intro .container .product-intro-content .text-content h3 {
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 8rem;
+  margin-bottom: 1.6rem;
+}
+html body .product-intro .container .product-intro-content .text-content h3 > span {
+  color: #a4a5a6;
+}
+html body .product-intro .container .product-intro-content .text-content p {
+  font-weight: 500;
+  font-size: 2.84rem;
+  line-height: 130.02%;
+}
+html body .product-intro .container .product-intro-content .image-wrapper {
+  margin-top: 10rem;
+  overflow: hidden;
+}
+html body .product-intro .container .product-intro-content .image-wrapper img {
+  width: 100%;
+  height: 97.8rem;
+}
+html body .product-intro .container .product-intro-content > div {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+html body .product-intro .container .product-persona .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 6.6rem;
+  line-height: 8rem;
+  margin-bottom: 1.6rem;
+}
+html body .product-intro .container .product-persona .description {
+  max-width: 78.6rem;
+  margin: auto;
+  font-weight: 500;
+  font-size: 2.84rem;
+  line-height: 130.02%;
+  text-align: center;
+}
+html body .product-intro .container .product-persona .persona-items-wrapper {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+html body .product-intro .container .product-persona .persona-items-wrapper > div {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item {
+  background: #282828;
+  border-radius: 1rem;
+  padding: 3.4rem 1.7rem 5.4rem 1.7rem;
+}
+html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item > .image-wrapper {
+  width: 16rem;
+  height: 16rem;
+  margin: 0 auto 1.6rem auto;
+}
+html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item > .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item > .name {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.84rem;
+  line-height: 130.02%;
+  margin-bottom: 1.6rem;
+  color: #ffffff;
+}
+html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item > .detail {
+  background: rgba(217, 217, 217, 0.1);
+  border-radius: 0.4rem;
+  padding: 1rem 1.4rem;
+  font-size: 14px;
+  line-height: 130.02%;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 43.9rem;
+  margin: auto;
+}
+html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item > .detail > span {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 1.6rem;
+}
+html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item > .info {
+  font-size: 1.8rem;
+  line-height: 130.02%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  height: 18.6rem;
+  margin: 5.3rem 0 0.7rem 0;
+}
+html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item > .fandf > .ul-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 130.02%;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item > .fandf > ul li {
+  position: relative;
+}
+html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item > .fandf > ul li::before {
+  content: "";
+  position: absolute;
+  top: 1em;
+  left: 0;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item > .fandf > ul li > span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 130.02%;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 1.8em;
+}
+html body .product-intro .container .product-wireframes {
+  margin-top: 5.8rem;
+}
+html body .product-intro .container .product-wireframes .description {
+  max-width: 75.9rem;
 }
 html body footer {
   margin-bottom: 1.6rem;
