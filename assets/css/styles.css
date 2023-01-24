@@ -90,6 +90,7 @@ video {
   font: inherit;
   vertical-align: baseline;
   color: #282828;
+  box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -167,6 +168,7 @@ html body nav {
 }
 html body nav .logo-side p {
   font-size: 1.75rem;
+  color: #ffffff;
 }
 html body nav .links-side ul {
   gap: 5.7rem;
@@ -233,6 +235,9 @@ html body nav .links-side .menu-icon > div:nth-of-type(2) {
     display: none;
   }
 }
+html body nav.color-black .logo-side p {
+  color: #000000;
+}
 html body nav.color-black .links-side ul li a {
   color: #000000;
 }
@@ -266,7 +271,7 @@ html body header::before {
 html body header .header-content {
   display: flex;
   flex-direction: column;
-  gap: 27.19rem;
+  gap: 22rem;
   margin-top: 22.7rem;
 }
 @media only screen and (min-width: 376px) {
@@ -280,6 +285,7 @@ html body header .header-content > h1 {
   line-height: 13.7rem;
   text-transform: uppercase;
   display: none;
+  color: #ffffff;
 }
 @media only screen and (min-width: 376px) {
   html body header .header-content > h1 {
@@ -300,8 +306,8 @@ html body header .header-content > .bio p {
 }
 @media only screen and (min-width: 376px) {
   html body header .header-content > .bio p {
-    font-size: 2.84rem;
-    max-width: 58.9rem;
+    font-size: 2.5rem;
+    max-width: 61.7rem;
   }
 }
 html body header .header-content > .bio .arrow {
@@ -683,7 +689,7 @@ html body .product-intro .container .product-persona .persona-items-wrapper > di
 html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item {
   background: #282828;
   border-radius: 1rem;
-  padding: 3.4rem 1.7rem 5.4rem 1.7rem;
+  padding: 3.4rem 1rem 5.4rem 1rem;
 }
 html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item > .image-wrapper {
   width: 16rem;
@@ -717,7 +723,7 @@ html body .product-intro .container .product-persona .persona-items-wrapper > di
 html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item > .detail > span {
   font-weight: 700;
   color: rgba(255, 255, 255, 0.7);
-  margin-left: 1.6rem;
+  margin-left: 1rem;
 }
 html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item > .info {
   font-size: 1.8rem;
@@ -725,7 +731,11 @@ html body .product-intro .container .product-persona .persona-items-wrapper > di
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
   height: 18.6rem;
-  margin: 5.3rem 0 0.7rem 0;
+  margin: 5.3rem auto 0.7rem auto;
+  max-width: 46.9rem;
+}
+html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item > .fandf {
+  margin-left: 2.1rem;
 }
 html body .product-intro .container .product-persona .persona-items-wrapper > div.persona-item > .fandf > .ul-title {
   font-weight: 700;
@@ -761,6 +771,143 @@ html body .product-intro .container .product-wireframes {
 }
 html body .product-intro .container .product-wireframes .description {
   max-width: 75.9rem;
+}
+html body .product-intro .container .product-wireframes .wireframes-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7.56rem;
+  margin: 5.8rem 0;
+}
+html body .product-intro .container .product-wireframes .wireframes-wrapper .row {
+  display: flex;
+  gap: 7.56rem;
+}
+html body .product-intro .container .product-wireframes .wireframes-wrapper .row .image {
+  width: 20.1rem;
+  height: 43.54rem;
+}
+html body .product-intro .container .product-wireframes .wireframes-wrapper .row .image img {
+  width: 100%;
+  height: 100%;
+}
+html body .user-experience .banner {
+  height: 41.7rem;
+  background-image: url("/assets/images/experience.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body .user-experience .banner h3 {
+  font-weight: 700;
+  font-size: 6.6rem;
+  line-height: 8rem;
+  text-align: center;
+  letter-spacing: -0.0002em;
+  color: #ffffff;
+  position: relative;
+}
+html body .user-experience .banner::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: rgba(40, 40, 40, 0.6);
+  width: 100%;
+  height: 100%;
+}
+html body .user-experience .experience-details {
+  max-width: 101.3rem;
+  margin: 4.3rem auto 7.4rem auto;
+}
+html body .user-experience .experience-details p {
+  font-weight: 500;
+  font-size: 2.84rem;
+  line-height: 130.02%;
+  text-align: center;
+}
+html body .user-experience .experience-image-wrapper {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 67rem;
+  margin: 0 auto 5.8rem auto;
+}
+html body .user-experience .experience-image-wrapper .image {
+  width: 20.3rem;
+  height: 43.9rem;
+}
+html body .user-experience .experience-image-wrapper .image img {
+  width: 100%;
+  height: 100%;
+}
+html body .usability-testing {
+  display: flex;
+  height: 102.3rem;
+}
+html body .usability-testing .left-side {
+  width: 45.78%;
+  height: 100%;
+  background-image: url("/assets/images/test.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body .usability-testing .left-side::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.36);
+  width: 100%;
+  height: 100%;
+}
+html body .usability-testing .left-side h3 {
+  font-weight: 700;
+  font-size: 6.6rem;
+  line-height: 8rem;
+  letter-spacing: -0.0002em;
+  color: #ffffff;
+  max-width: 34.3rem;
+  position: relative;
+}
+html body .usability-testing .right-side {
+  width: 54.22%;
+  background: #282828;
+  height: 100%;
+  padding: 7.1rem 5.4rem 8.1rem 5.4rem;
+}
+html body .usability-testing .right-side .text-content {
+  max-width: 55rem;
+}
+html body .usability-testing .right-side p {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 2.84rem;
+  line-height: 130.02%;
+}
+html body .usability-testing .right-side p:first-child, html body .usability-testing .right-side p:nth-of-type(2) {
+  margin-bottom: 4.4rem;
+}
+html body .usability-testing .right-side p b {
+  color: #ffffff;
+  font-weight: 700;
+}
+html body .usability-testing .right-side ul li {
+  font-weight: 500;
+  font-size: 2.84rem;
+  line-height: 130.02%;
+  display: flex;
+  gap: 1rem;
+  margin-left: 0.5em;
+}
+html body .usability-testing .right-side ul li span {
+  color: #ffffff;
 }
 html body footer {
   margin-bottom: 1.6rem;

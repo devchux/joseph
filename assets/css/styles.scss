@@ -91,6 +91,7 @@ video {
   font: inherit;
   vertical-align: baseline;
   color: #282828;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -166,6 +167,7 @@ html {
       .logo-side {
         p {
           font-size: 1.75rem;
+          color: #ffffff;
         }
       }
 
@@ -242,6 +244,11 @@ html {
       }
 
       &.color-black {
+        .logo-side {
+          p {
+            color: #000000;
+          }
+        }
         .links-side {
           ul {
             li {
@@ -287,7 +294,7 @@ html {
       .header-content {
         display: flex;
         flex-direction: column;
-        gap: 27.19rem;
+        gap: 22rem;
         margin-top: 22.7rem;
 
         @media only screen and (min-width: 376px) {
@@ -300,6 +307,7 @@ html {
           line-height: 13.7rem;
           text-transform: uppercase;
           display: none;
+          color: #ffffff;
 
           @media only screen and (min-width: 376px) {
             display: block;
@@ -319,8 +327,8 @@ html {
             color: #ffffff;
 
             @media only screen and (min-width: 376px) {
-              font-size: 2.84rem;
-              max-width: 58.9rem;
+              font-size: 2.5rem;
+              max-width: 61.7rem;
             }
           }
 
@@ -740,7 +748,7 @@ html {
               &.persona-item {
                 background: #282828;
                 border-radius: 1rem;
-                padding: 3.4rem 1.7rem 5.4rem 1.7rem;
+                padding: 3.4rem 1rem 5.4rem 1rem;
 
                 > .image-wrapper {
                   width: 16rem;
@@ -776,7 +784,7 @@ html {
                   > span {
                     font-weight: 700;
                     color: rgba(255, 255, 255, 0.7);
-                    margin-left: 1.6rem;
+                    margin-left: 1rem;
                   }
                 }
 
@@ -786,10 +794,13 @@ html {
                   text-align: center;
                   color: rgba(255, 255, 255, 0.7);
                   height: 18.6rem;
-                  margin: 5.3rem 0 0.7rem 0;
+                  margin: 5.3rem auto 0.7rem auto;
+                  max-width: 46.9rem;
                 }
 
                 > .fandf {
+                  margin-left: 2.1rem;
+
                   > .ul-title {
                     font-weight: 700;
                     font-size: 1.8rem;
@@ -803,7 +814,7 @@ html {
                       position: relative;
 
                       &::before {
-                        content: '';
+                        content: "";
                         position: absolute;
                         top: 1em;
                         left: 0;
@@ -835,6 +846,170 @@ html {
 
           .description {
             max-width: 75.9rem;
+          }
+
+          .wireframes-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 7.56rem;
+            margin: 5.8rem 0;
+
+            .row {
+              display: flex;
+              gap: 7.56rem;
+
+              .image {
+                width: 20.1rem;
+                height: 43.54rem;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .user-experience {
+      .banner {
+        height: 41.7rem;
+        background-image: url("/assets/images/experience.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+          font-weight: 700;
+          font-size: 6.6rem;
+          line-height: 8rem;
+          text-align: center;
+          letter-spacing: -0.0002em;
+          color: #ffffff;
+          position: relative;
+        }
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          background-color: rgba(40, 40, 40, 0.6);
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .experience-details {
+        max-width: 101.3rem;
+        margin: 4.3rem auto 7.4rem auto;
+
+        p {
+          font-weight: 500;
+          font-size: 2.84rem;
+          line-height: 130.02%;
+          text-align: center;
+        }
+      }
+
+      .experience-image-wrapper {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 67rem;
+        margin: 0 auto 5.8rem auto;
+
+        .image {
+          width: 20.3rem;
+          height: 43.9rem;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .usability-testing {
+      display: flex;
+      height: 102.3rem;
+
+      .left-side {
+        width: 45.78%;
+        height: 100%;
+        background-image: url("/assets/images/test.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.36);
+          width: 100%;
+          height: 100%;
+        }
+        h3 {
+          font-weight: 700;
+          font-size: 6.6rem;
+          line-height: 8rem;
+          letter-spacing: -0.0002em;
+          color: #ffffff;
+          max-width: 34.3rem;
+          position: relative;
+        }
+      }
+
+      .right-side {
+        width: 54.22%;
+        background: #282828;
+        height: 100%;
+        padding: 7.1rem 5.4rem 8.1rem 5.4rem;
+
+        .text-content {
+          max-width: 55rem;
+        }
+
+        p {
+          color: #ffffff;
+          font-weight: 500;
+          font-size: 2.84rem;
+          line-height: 130.02%;
+
+          &:first-child,
+          &:nth-of-type(2) {
+            margin-bottom: 4.4rem;
+          }
+
+          b {
+            color: #ffffff;
+            font-weight: 700;
+          }
+        }
+
+        ul {
+          li {
+            font-weight: 500;
+            font-size: 2.84rem;
+            line-height: 130.02%;
+            display: flex;
+            gap: 1rem;
+            margin-left: 0.5em;
+
+            span {
+              color: #ffffff;
+            }
           }
         }
       }
