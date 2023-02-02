@@ -295,7 +295,7 @@ html {
         display: flex;
         flex-direction: column;
         gap: 22rem;
-        margin-top: 22.7rem;
+        margin-top: 18.8rem;
 
         @media only screen and (min-width: 376px) {
           margin-top: 0;
@@ -308,6 +308,7 @@ html {
           text-transform: uppercase;
           display: none;
           color: #ffffff;
+          white-space: nowrap;
 
           @media only screen and (min-width: 376px) {
             display: block;
@@ -322,13 +323,14 @@ html {
           p {
             max-width: 20.7rem;
             font-weight: 500;
-            font-size: 1.4rem;
-            line-height: 130.02%;
+            font-size: 1.2rem;
+            line-height: 1.56rem;
             color: #ffffff;
 
             @media only screen and (min-width: 376px) {
               font-size: 2.5rem;
               max-width: 61.7rem;
+              line-height: 130.02%;
             }
           }
 
@@ -370,6 +372,7 @@ html {
           text-transform: uppercase;
           color: #282828;
           text-align: center;
+          white-space: nowrap;
 
           @media only screen and (min-width: 376px) {
             font-size: 10.94rem;
@@ -397,6 +400,7 @@ html {
 
             @media only screen and (min-width: 376px) {
               gap: 6.4rem;
+              flex-wrap: nowrap;
             }
 
             .project-image {
@@ -1057,7 +1061,7 @@ html {
           text-transform: uppercase;
 
           @media only screen and (min-width: 376px) {
-            font-size: 11.7rem;
+            font-size: 11.5rem;
             line-height: 14.2rem;
           }
 

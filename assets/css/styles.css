@@ -272,7 +272,7 @@ html body header .header-content {
   display: flex;
   flex-direction: column;
   gap: 22rem;
-  margin-top: 22.7rem;
+  margin-top: 18.8rem;
 }
 @media only screen and (min-width: 376px) {
   html body header .header-content {
@@ -286,6 +286,7 @@ html body header .header-content > h1 {
   text-transform: uppercase;
   display: none;
   color: #ffffff;
+  white-space: nowrap;
 }
 @media only screen and (min-width: 376px) {
   html body header .header-content > h1 {
@@ -300,14 +301,15 @@ html body header .header-content > .bio {
 html body header .header-content > .bio p {
   max-width: 20.7rem;
   font-weight: 500;
-  font-size: 1.4rem;
-  line-height: 130.02%;
+  font-size: 1.2rem;
+  line-height: 1.56rem;
   color: #ffffff;
 }
 @media only screen and (min-width: 376px) {
   html body header .header-content > .bio p {
     font-size: 2.5rem;
     max-width: 61.7rem;
+    line-height: 130.02%;
   }
 }
 html body header .header-content > .bio .arrow {
@@ -343,6 +345,7 @@ html body .projects-section .container .section-title {
   text-transform: uppercase;
   color: #282828;
   text-align: center;
+  white-space: nowrap;
 }
 @media only screen and (min-width: 376px) {
   html body .projects-section .container .section-title {
@@ -372,6 +375,7 @@ html body .projects-section .container .projects .project {
 @media only screen and (min-width: 376px) {
   html body .projects-section .container .projects .project {
     gap: 6.4rem;
+    flex-wrap: nowrap;
   }
 }
 html body .projects-section .container .projects .project .project-image {
@@ -953,7 +957,7 @@ html body footer .container .footer-mail {
 }
 @media only screen and (min-width: 376px) {
   html body footer .container .footer-mail {
-    font-size: 11.7rem;
+    font-size: 11.5rem;
     line-height: 14.2rem;
   }
 }
