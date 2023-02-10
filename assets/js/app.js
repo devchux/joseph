@@ -38,7 +38,7 @@ class App {
         "data-template",
         content.getAttribute("data-template")
       );
-      this.create();
+      this.page.create();
     }
   }
 
@@ -46,8 +46,15 @@ class App {
     const links = document.querySelectorAll("a");
     each(Array.from(links), (_, link) => {
       link.addEventListener("click", (event) => {
-        event.preventDefault();
-        this.fetchPage(link.href);
+        const split = link.href.split("/");
+        console.log(split[2]);
+        if (
+          !split[split.length - 1].startsWith("#") &&
+          !["behance.net", "dribbble.com", "instagram.com"].split[2]
+        ) {
+          event.preventDefault();
+          this.fetchPage(link.href);
+        }
       });
     });
   }

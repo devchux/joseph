@@ -91,6 +91,7 @@ video {
   vertical-align: baseline;
   color: #282828;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -166,7 +167,9 @@ html body nav {
     margin: 3rem 0 2.3rem 0;
   }
 }
-html body nav .logo-side p {
+html body nav .logo-side > a {
+  text-decoration: none;
+  display: block;
   font-size: 1.75rem;
   color: #ffffff;
 }
@@ -235,7 +238,8 @@ html body nav .links-side .menu-icon > div:nth-of-type(2) {
     display: none;
   }
 }
-html body nav.color-black .logo-side p {
+html body nav.color-black .logo-side > a {
+  text-decoration: none;
   color: #000000;
 }
 html body nav.color-black .links-side ul li a {
@@ -382,6 +386,9 @@ html body .projects-section .container .projects .project .project-image {
   width: 100%;
   height: 28.2rem;
   background-color: #d9d9d9;
+  background-image: url("/assets/images/iphone-in-hand.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media only screen and (min-width: 376px) {
   html body .projects-section .container .projects .project .project-image {
@@ -399,6 +406,12 @@ html body .projects-section .container .projects .project .project-content h3 {
   html body .projects-section .container .projects .project .project-content h3 {
     font-size: 7.34rem;
   }
+}
+html body .projects-section .container .projects .project .project-content h3 a {
+  text-decoration: none;
+}
+html body .projects-section .container .projects .project .project-content h3 a:hover {
+  text-decoration: underline;
 }
 html body .projects-section .container .projects .project .project-content p {
   max-width: 23.4rem;
