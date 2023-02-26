@@ -1,4 +1,5 @@
 import { About } from "./pages/about.js";
+import { Herconomy } from "./pages/herconomy.js";
 import { Home } from "./pages/home.js";
 import { each } from "./utils/helpers.js";
 
@@ -19,6 +20,7 @@ class App {
     this.pages = {
       home: new Home(),
       about: new About(),
+      herconomy: new Herconomy(),
     };
 
     this.page = this.pages[this.template];

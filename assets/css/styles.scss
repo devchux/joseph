@@ -642,19 +642,29 @@ html {
     .herconomy-section {
       .product-banner {
         display: flex;
-        height: 68.5rem;
+        height: 57.8rem;
+        flex-direction: column-reverse;
+
+        @media only screen and (min-width: 428px) {
+          flex-direction: row;
+          height: 68.5rem;
+        }
 
         .left-side {
-          width: 57%;
           background-image: url("/assets/images/hand.png");
           background-repeat: no-repeat;
           background-size: cover;
-          height: 100%;
+          height: 10.9rem;
           position: relative;
           display: flex;
           align-items: center;
           justify-content: center;
           flex-direction: column;
+
+          @media only screen and (min-width: 428px) {
+            width: 57%;
+            height: 100%;
+          }
 
           &::before {
             position: absolute;
@@ -671,26 +681,42 @@ html {
 
             h3 {
               font-weight: 700;
-              font-size: 6.6rem;
-              line-height: 8rem;
+              font-size: 3.3rem;
+              line-height: 4rem;
               color: #ffffff;
+
+              @media only screen and (min-width: 428px) {
+                font-size: 6.6rem;
+                line-height: 8rem;
+              }
             }
 
             p {
               font-weight: 500;
-              font-size: 4rem;
-              line-height: 4.8rem;
+              font-size: 2rem;
+              line-height: 2.4rem;
               color: #ffffff;
+
+              @media only screen and (min-width: 428px) {
+                font-size: 4rem;
+                line-height: 4.8rem;
+              }
             }
           }
         }
 
         .right-side {
-          width: 43%;
-          height: 100%;
-          background-image: url("/assets/images/iphone-in-hand.png");
+          height: 46.9rem;
+          background-image: url("/assets/images/iphone-in-hand-mobile.png");
           background-repeat: no-repeat;
-          background-size: cover;
+          background-size: 100% 100%;
+
+          @media only screen and (min-width: 428px) {
+            width: 43%;
+            background-size: cover;
+            height: 100%;
+            background-image: url("/assets/images/iphone-in-hand.png");
+          }
         }
       }
     }
@@ -699,15 +725,37 @@ html {
       .container {
         .product-intro-content {
           display: flex;
-          padding: 5.7rem 0;
-          gap: 3.4rem;
+          padding: 2rem;
+          gap: 1rem;
+          flex-direction: column;
+          align-items: center;
+
+          @media only screen and (min-width: 428px) {
+            flex-direction: row;
+            padding: 5.7rem 0;
+            gap: 3.4rem;
+            align-items: flex-start;
+          }
+
+          > div {
+            flex-grow: 1;
+            flex-basis: 0;
+          }
 
           .text-content {
             h3 {
               font-weight: 700;
-              font-size: 6rem;
-              line-height: 8rem;
-              margin-bottom: 1.6rem;
+              font-size: 3.3rem;
+              line-height: 4rem;
+              margin-bottom: 1rem;
+              text-align: center;
+
+              @media only screen and (min-width: 428px) {
+                font-size: 6rem;
+                line-height: 8rem;
+                margin-bottom: 1.6rem;
+                text-align: left;
+              }
 
               > span {
                 color: #a4a5a6;
@@ -716,24 +764,37 @@ html {
 
             p {
               font-weight: 500;
-              font-size: 2.84rem;
+              font-size: 1.4rem;
               line-height: 130.02%;
+              text-align: center;
+
+              @media only screen and (min-width: 428px) {
+                font-size: 2.84rem;
+                text-align: left;
+              }
             }
           }
 
           .image-wrapper {
-            margin-top: 10rem;
             overflow: hidden;
+            width: 22.9rem;
+            flex-basis: auto;
+
+            @media only screen and (min-width: 428px) {
+              width: auto;
+              margin-top: 10rem;
+              height: auto;
+              flex-basis: 0;
+            }
 
             img {
               width: 100%;
-              height: 97.8rem;
-            }
-          }
+              height: 43.5rem;
 
-          > div {
-            flex-grow: 1;
-            flex-basis: 0;
+              @media only screen and (min-width: 428px) {
+                height: 97.8rem;
+              }
+            }
           }
         }
 
@@ -741,24 +802,38 @@ html {
           .title {
             text-align: center;
             font-weight: 700;
-            font-size: 6.6rem;
-            line-height: 8rem;
+            font-size: 3.3rem;
+            line-height: 4rem;
             margin-bottom: 1.6rem;
+
+            @media only screen and (min-width: 428px) {
+              font-size: 6.6rem;
+              line-height: 8rem;
+            }
           }
 
           .description {
             max-width: 78.6rem;
             margin: auto;
             font-weight: 500;
-            font-size: 2.84rem;
+            font-size: 1.4rem;
             line-height: 130.02%;
             text-align: center;
+
+            @media only screen and (min-width: 428px) {
+              font-size: 2.84rem;
+            }
           }
 
           .persona-items-wrapper {
             display: flex;
             gap: 2.5rem;
             margin-top: 3rem;
+            flex-direction: column;
+
+            @media only screen and (min-width: 428px) {
+              flex-direction: row;
+            }
 
             > div {
               flex-grow: 1;
@@ -770,9 +845,15 @@ html {
                 padding: 3.4rem 1rem 5.4rem 1rem;
 
                 > .image-wrapper {
-                  width: 16rem;
-                  height: 16rem;
-                  margin: 0 auto 1.6rem auto;
+                  width: 10.3rem;
+                  height: 10.3rem;
+                  margin: 0 auto 1.3rem auto;
+
+                  @media only screen and (min-width: 428px) {
+                    width: 16rem;
+                    height: 16rem;
+                    margin: 0 auto 1.6rem auto;
+                  }
 
                   img {
                     width: 100%;
@@ -784,21 +865,32 @@ html {
                 > .name {
                   text-align: center;
                   font-weight: 700;
-                  font-size: 2.84rem;
+                  font-size: 1.4rem;
                   line-height: 130.02%;
                   margin-bottom: 1.6rem;
                   color: #ffffff;
+
+                  @media only screen and (min-width: 428px) {
+                    font-size: 2.84rem;
+                  }
                 }
 
                 > .detail {
                   background: rgba(#d9d9d9, 0.1);
                   border-radius: 0.4rem;
-                  padding: 1rem 1.4rem;
-                  font-size: 14px;
+                  padding: 1rem 0;
+                  font-size: 0.8rem;
                   line-height: 130.02%;
                   color: rgba(255, 255, 255, 0.7);
                   max-width: 43.9rem;
                   margin: auto;
+                  text-align: center;
+
+                  @media only screen and (min-width: 428px) {
+                    font-size: 1.4rem;
+                    text-align: left;
+                    white-space: nowrap;
+                  }
 
                   > span {
                     font-weight: 700;
@@ -808,24 +900,37 @@ html {
                 }
 
                 > .info {
-                  font-size: 1.8rem;
+                  font-size: 1.1rem;
                   line-height: 130.02%;
                   text-align: center;
                   color: rgba(255, 255, 255, 0.7);
-                  height: 18.6rem;
-                  margin: 5.3rem auto 0.7rem auto;
+                  margin: 3.4rem auto 3.2rem auto;
                   max-width: 46.9rem;
+
+                  @media only screen and (min-width: 428px) {
+                    font-size: 1.8rem;
+                    margin: 5.3rem auto 0.7rem auto;
+                    height: 18.6rem;
+                  }
                 }
 
                 > .fandf {
-                  margin-left: 2.1rem;
+                  margin-left: 0.9rem;
+
+                  @media only screen and (min-width: 428px) {
+                    margin-left: 2.1rem;
+                  }
 
                   > .ul-title {
                     font-weight: 700;
-                    font-size: 1.8rem;
+                    font-size: 1.1rem;
                     line-height: 130.02%;
                     color: #ffffff;
                     margin-bottom: 1rem;
+
+                    @media only screen and (min-width: 428px) {
+                      font-size: 1.8rem;
+                    }
                   }
 
                   > ul {
@@ -847,10 +952,14 @@ html {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
-                        font-size: 1.8rem;
+                        font-size: 1.1rem;
                         line-height: 130.02%;
                         color: rgba(255, 255, 255, 0.7);
                         margin-left: 1.8em;
+
+                        @media only screen and (min-width: 428px) {
+                          font-size: 1.8rem;
+                        }
                       }
                     }
                   }
@@ -869,17 +978,33 @@ html {
 
           .wireframes-wrapper {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 7.56rem;
-            margin: 5.8rem 0;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 5.1rem;
+            margin: 2rem 0;
+
+            @media only screen and (min-width: 428px) {
+              grid-template-columns: repeat(2, 1fr);
+              gap: 7.56rem;
+              margin: 5.8rem 0;
+            }
 
             .row {
               display: flex;
-              gap: 7.56rem;
+              gap: 5.1rem;
+              justify-self: center;
+
+              @media only screen and (min-width: 428px) {
+                gap: 7.56rem;
+              }
 
               .image {
-                width: 20.1rem;
-                height: 43.54rem;
+                width: 13.6rem;
+                height: 29.54rem;
+
+                @media only screen and (min-width: 428px) {
+                  width: 20.1rem;
+                  height: 43.54rem;
+                }
 
                 img {
                   width: 100%;
@@ -894,7 +1019,7 @@ html {
 
     .user-experience {
       .banner {
-        height: 41.7rem;
+        height: 12.2rem;
         background-image: url("/assets/images/experience.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -903,14 +1028,23 @@ html {
         align-items: center;
         justify-content: center;
 
+        @media only screen and (min-width: 428px) {
+          height: 41.7rem;
+        }
+
         h3 {
           font-weight: 700;
-          font-size: 6.6rem;
-          line-height: 8rem;
+          font-size: 3.3rem;
+          line-height: 4rem;
           text-align: center;
           letter-spacing: -0.0002em;
           color: #ffffff;
           position: relative;
+
+          @media only screen and (min-width: 428px) {
+            font-size: 6.6rem;
+            line-height: 8rem;
+          }
         }
 
         &::before {
@@ -926,26 +1060,47 @@ html {
 
       .experience-details {
         max-width: 101.3rem;
-        margin: 4.3rem auto 7.4rem auto;
+        margin: 1rem auto 1.5rem auto;
+        padding: 0 2.6rem;
+
+        @media only screen and (min-width: 428px) {
+          margin: 4.3rem auto 7.4rem auto;
+          padding: 0;
+        }
 
         p {
           font-weight: 500;
-          font-size: 2.84rem;
+          font-size: 1.4rem;
           line-height: 130.02%;
           text-align: center;
+
+          @media only screen and (min-width: 428px) {
+            font-size: 2.84rem;
+          }
         }
       }
 
       .experience-image-wrapper {
         display: grid;
-        gap: 3rem;
-        grid-template-columns: repeat(3, 1fr);
+        gap: 2.2rem;
+        grid-template-columns: repeat(2, 1fr);
         max-width: 67rem;
         margin: 0 auto 5.8rem auto;
 
+        @media only screen and (min-width: 428px) {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 3rem;
+        }
+
         .image {
-          width: 20.3rem;
-          height: 43.9rem;
+          width: 14.9rem;
+          height: 32.3rem;
+          justify-self: center;
+
+          @media only screen and (min-width: 428px) {
+            width: 20.3rem;
+            height: 43.9rem;
+          }
 
           img {
             width: 100%;
@@ -957,11 +1112,16 @@ html {
 
     .usability-testing {
       display: flex;
-      height: 102.3rem;
+      height: 91rem;
+      flex-direction: column;
+
+      @media only screen and (min-width: 428px) {
+        flex-direction: row;
+        height: 102.3rem;
+      }
 
       .left-side {
-        width: 45.78%;
-        height: 100%;
+        height: 37.5rem;
         background-image: url("/assets/images/test.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -969,6 +1129,11 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media only screen and (min-width: 428px) {
+          width: 45.78%;
+          height: 100%;
+        }
 
         &::before {
           position: absolute;
@@ -981,20 +1146,30 @@ html {
         }
         h3 {
           font-weight: 700;
-          font-size: 6.6rem;
-          line-height: 8rem;
+          font-size: 3.3rem;
+          line-height: 4rem;
           letter-spacing: -0.0002em;
           color: #ffffff;
           max-width: 34.3rem;
           position: relative;
+
+          @media only screen and (min-width: 428px) {
+            font-size: 6.6rem;
+            line-height: 8rem;
+          }
         }
       }
 
       .right-side {
-        width: 54.22%;
         background: #282828;
-        height: 100%;
-        padding: 7.1rem 5.4rem 8.1rem 5.4rem;
+        height: 53.5rem;
+        padding: 7.1rem 2.4rem 5rem 4.1rem;
+
+        @media only screen and (min-width: 428px) {
+          width: 54.22%;
+          height: 100%;
+          padding: 9.5rem 5.4rem 8.1rem 5.4rem;
+        }
 
         .text-content {
           max-width: 55rem;
@@ -1003,12 +1178,20 @@ html {
         p {
           color: #ffffff;
           font-weight: 500;
-          font-size: 2.84rem;
+          font-size: 1.4rem;
           line-height: 130.02%;
+
+          @media only screen and (min-width: 428px) {
+            font-size: 2.84rem;
+          }
 
           &:first-child,
           &:nth-of-type(2) {
-            margin-bottom: 4.4rem;
+            margin-bottom: 2.5rem;
+
+            @media only screen and (min-width: 428px) {
+              margin-bottom: 4.4rem;
+            }
           }
 
           b {
@@ -1020,11 +1203,15 @@ html {
         ul {
           li {
             font-weight: 500;
-            font-size: 2.84rem;
+            font-size: 1.4rem;
             line-height: 130.02%;
             display: flex;
             gap: 1rem;
             margin-left: 0.5em;
+
+            @media only screen and (min-width: 428px) {
+              font-size: 2.84rem;
+            }
 
             span {
               color: #ffffff;
@@ -1035,7 +1222,11 @@ html {
     }
 
     .product-solving-problems {
-      margin: 5.8rem 0;
+      margin: 2rem 0;
+
+      @media only screen and (min-width: 428px) {
+        margin: 5.8rem 0;
+      }
       .container {
         .product-persona {
           .description {
@@ -1045,12 +1236,22 @@ html {
         .automated-savings {
           background: rgba(#d9d9d9, 0.3);
           border-radius: 3rem;
-          padding: 7.3rem 2.2rem 5.2rem 8.2rem;
-          margin-top: 3.9rem;
+          padding: 2.2rem 0 4.4rem 0;
+          margin-top: 1rem;
+
+          @media only screen and (min-width: 428px) {
+            margin-top: 3.9rem;
+            padding: 7.3rem 2.2rem 5.2rem 8.2rem;
+          }
 
           > div {
             &:first-child {
               display: flex;
+              flex-direction: column-reverse;
+
+              @media only screen and (min-width: 428px) {
+                flex-direction: row;
+              }
 
               .text-content {
                 display: flex;
@@ -1060,8 +1261,12 @@ html {
                 p {
                   font-family: "Inter";
                   font-style: normal;
-                  font-size: 2.84rem;
+                  font-size: 1.4rem;
                   line-height: 130.02%;
+
+                  @media only screen and (min-width: 428px) {
+                    font-size: 2.84rem;
+                  }
 
                   span {
                     font-weight: 700;
@@ -1073,18 +1278,28 @@ html {
                 font-family: "Inter";
                 font-style: normal;
                 font-weight: 700;
-                font-size: 7.3rem;
+                font-size: 4.5rem;
                 line-height: 130.02%;
                 color: rgba(#000000, 0.5);
+                text-align: center;
+
+                @media only screen and (min-width: 428px) {
+                  font-size: 7.3rem;
+                  text-align: left;
+                }
               }
             }
 
             &:last-child {
-              display: flex;
+              display: none;
               align-items: center;
               gap: 2.2rem;
               justify-content: center;
               margin-top: 5.8rem;
+
+              @media only screen and (min-width: 428px) {
+                display: flex;
+              }
 
               > div {
                 width: fit-content;
