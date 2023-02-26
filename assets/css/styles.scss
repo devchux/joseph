@@ -1034,6 +1034,109 @@ html {
       }
     }
 
+    .product-solving-problems {
+      margin: 5.8rem 0;
+      .container {
+        .product-persona {
+          .description {
+            max-width: 90.2rem;
+          }
+        }
+        .automated-savings {
+          background: rgba(#d9d9d9, 0.3);
+          border-radius: 3rem;
+          padding: 7.3rem 2.2rem 5.2rem 8.2rem;
+          margin-top: 3.9rem;
+
+          > div {
+            &:first-child {
+              display: flex;
+
+              .text-content {
+                display: flex;
+                flex-direction: column;
+                gap: 1.4rem;
+
+                p {
+                  font-family: "Inter";
+                  font-style: normal;
+                  font-size: 2.84rem;
+                  line-height: 130.02%;
+
+                  span {
+                    font-weight: 700;
+                  }
+                }
+              }
+
+              .title {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 7.3rem;
+                line-height: 130.02%;
+                color: rgba(#000000, 0.5);
+              }
+            }
+
+            &:last-child {
+              display: flex;
+              align-items: center;
+              gap: 2.2rem;
+              justify-content: center;
+              margin-top: 5.8rem;
+
+              > div {
+                width: fit-content;
+
+                &:last-child {
+                  margin-left: 2.3rem;
+                }
+
+                > img {
+                  width: 20rem;
+                  height: 43.5rem;
+                }
+
+                > p {
+                  font-weight: 400;
+                  font-size: 1.84rem;
+                  line-height: 130.02%;
+                  color: rgba(#000000, 0.5);
+                }
+              }
+
+              > img {
+                width: 7.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .visual-design {
+      background: #cfcfcf;
+      padding: 2.2rem 0 11.9rem 0;
+
+      .container {
+        .product-persona {
+          .description {
+            max-width: 89.1rem;
+          }
+        }
+      }
+
+      > .image-wrapper {
+        width: 100%;
+        margin-top: 5.7rem;
+
+        > img {
+          width: 100%;
+        }
+      }
+    }
+
     footer {
       margin-bottom: 1.6rem;
 

@@ -926,6 +926,84 @@ html body .usability-testing .right-side ul li {
 html body .usability-testing .right-side ul li span {
   color: #ffffff;
 }
+html body .product-solving-problems {
+  margin: 5.8rem 0;
+}
+html body .product-solving-problems .container .product-persona .description {
+  max-width: 90.2rem;
+}
+html body .product-solving-problems .container .automated-savings {
+  background: rgba(217, 217, 217, 0.3);
+  border-radius: 3rem;
+  padding: 7.3rem 2.2rem 5.2rem 8.2rem;
+  margin-top: 3.9rem;
+}
+html body .product-solving-problems .container .automated-savings > div:first-child {
+  display: flex;
+}
+html body .product-solving-problems .container .automated-savings > div:first-child .text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+html body .product-solving-problems .container .automated-savings > div:first-child .text-content p {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 2.84rem;
+  line-height: 130.02%;
+}
+html body .product-solving-problems .container .automated-savings > div:first-child .text-content p span {
+  font-weight: 700;
+}
+html body .product-solving-problems .container .automated-savings > div:first-child .title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7.3rem;
+  line-height: 130.02%;
+  color: rgba(0, 0, 0, 0.5);
+}
+html body .product-solving-problems .container .automated-savings > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+  justify-content: center;
+  margin-top: 5.8rem;
+}
+html body .product-solving-problems .container .automated-savings > div:last-child > div {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+html body .product-solving-problems .container .automated-savings > div:last-child > div:last-child {
+  margin-left: 2.3rem;
+}
+html body .product-solving-problems .container .automated-savings > div:last-child > div > img {
+  width: 20rem;
+  height: 43.5rem;
+}
+html body .product-solving-problems .container .automated-savings > div:last-child > div > p {
+  font-weight: 400;
+  font-size: 1.84rem;
+  line-height: 130.02%;
+  color: rgba(0, 0, 0, 0.5);
+}
+html body .product-solving-problems .container .automated-savings > div:last-child > img {
+  width: 7.5rem;
+}
+html body .visual-design {
+  background: #cfcfcf;
+  padding: 2.2rem 0 11.9rem 0;
+}
+html body .visual-design .container .product-persona .description {
+  max-width: 89.1rem;
+}
+html body .visual-design > .image-wrapper {
+  width: 100%;
+  margin-top: 5.7rem;
+}
+html body .visual-design > .image-wrapper > img {
+  width: 100%;
+}
 html body footer {
   margin-bottom: 1.6rem;
 }

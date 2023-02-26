@@ -39,15 +39,17 @@ class App {
         content.getAttribute("data-template")
       );
       this.page.create();
+
+      this.addEventListeners();
     }
   }
 
   addEventListeners() {
+    //handle page navigation
     const links = document.querySelectorAll("a");
     each(Array.from(links), (_, link) => {
       link.addEventListener("click", (event) => {
         const split = link.href.split("/");
-        console.log(split[2]);
         if (
           !split[split.length - 1].startsWith("#") &&
           !["behance.net", "dribbble.com", "instagram.com"].split[2]
@@ -56,6 +58,21 @@ class App {
           this.fetchPage(link.href);
         }
       });
+    });
+
+    //handle top nav hamburger toggle
+    let initNavState = false;
+    const button = document.querySelector(".menu-icon");
+    const navList = document.querySelector(".links-side > ul");
+
+    button.addEventListener("click", function () {
+      if (initNavState) {
+        navList.style.visibility = "hidden";
+        initNavState = false;
+      } else {
+        navList.style.visibility = "visible";
+        initNavState = true;
+      }
     });
   }
 }
