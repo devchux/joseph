@@ -681,7 +681,7 @@ html body .herconomy-section .product-banner .right-side {
 }
 html body .product-intro .container .product-intro-content {
   display: flex;
-  padding: 2rem;
+  padding: 2rem 0;
   gap: 1rem;
   flex-direction: column;
   align-items: center;
@@ -1217,7 +1217,6 @@ html body .product-solving-problems .container .automated-savings > div:first-ch
 }
 html body .product-solving-problems .container .automated-savings > div:last-child {
   display: none;
-  align-items: center;
   gap: 2.2rem;
   justify-content: center;
   margin-top: 5.8rem;
@@ -1238,14 +1237,19 @@ html body .product-solving-problems .container .automated-savings > div:last-chi
   width: 20rem;
   height: 43.5rem;
 }
+html body .product-solving-problems .container .automated-savings > div:last-child > div:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+}
+html body .product-solving-problems .container .automated-savings > div:last-child > div:nth-of-type(2) > img {
+  width: 7.5rem;
+  height: auto;
+}
 html body .product-solving-problems .container .automated-savings > div:last-child > div > p {
   font-weight: 400;
   font-size: 1.84rem;
   line-height: 130.02%;
   color: rgba(0, 0, 0, 0.5);
-}
-html body .product-solving-problems .container .automated-savings > div:last-child > img {
-  width: 7.5rem;
 }
 html body .visual-design {
   background: #cfcfcf;
