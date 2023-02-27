@@ -645,7 +645,7 @@ html {
         height: 57.8rem;
         flex-direction: column-reverse;
 
-        @media only screen and (min-width: 375px) {
+        @media only screen and (min-width: 376px) {
           flex-direction: row;
           height: 68.5rem;
         }
@@ -661,7 +661,7 @@ html {
           justify-content: center;
           flex-direction: column;
 
-          @media only screen and (min-width: 375px) {
+          @media only screen and (min-width: 376px) {
             width: 57%;
             height: 100%;
           }
@@ -685,7 +685,7 @@ html {
               line-height: 4rem;
               color: #ffffff;
 
-              @media only screen and (min-width: 375px) {
+              @media only screen and (min-width: 376px) {
                 font-size: 6.6rem;
                 line-height: 8rem;
               }
@@ -697,7 +697,7 @@ html {
               line-height: 2.4rem;
               color: #ffffff;
 
-              @media only screen and (min-width: 375px) {
+              @media only screen and (min-width: 376px) {
                 font-size: 4rem;
                 line-height: 4.8rem;
               }
@@ -711,7 +711,7 @@ html {
           background-repeat: no-repeat;
           background-size: 100% 100%;
 
-          @media only screen and (min-width: 375px) {
+          @media only screen and (min-width: 376px) {
             width: 43%;
             background-size: cover;
             height: 100%;
@@ -730,7 +730,7 @@ html {
           flex-direction: column;
           align-items: center;
 
-          @media only screen and (min-width: 375px) {
+          @media only screen and (min-width: 376px) {
             flex-direction: row;
             padding: 5.7rem 0;
             gap: 3.4rem;
@@ -750,7 +750,7 @@ html {
               margin-bottom: 1rem;
               text-align: center;
 
-              @media only screen and (min-width: 375px) {
+              @media only screen and (min-width: 376px) {
                 font-size: 6rem;
                 line-height: 8rem;
                 margin-bottom: 1.6rem;
@@ -768,7 +768,7 @@ html {
               line-height: 130.02%;
               text-align: center;
 
-              @media only screen and (min-width: 375px) {
+              @media only screen and (min-width: 376px) {
                 font-size: 2.84rem;
                 text-align: left;
               }
@@ -780,7 +780,7 @@ html {
             width: 22.9rem;
             flex-basis: auto;
 
-            @media only screen and (min-width: 375px) {
+            @media only screen and (min-width: 376px) {
               width: auto;
               margin-top: 10rem;
               height: auto;
@@ -791,7 +791,7 @@ html {
               width: 100%;
               height: 43.5rem;
 
-              @media only screen and (min-width: 375px) {
+              @media only screen and (min-width: 376px) {
                 height: 97.8rem;
               }
             }
@@ -806,7 +806,7 @@ html {
             line-height: 4rem;
             margin-bottom: 1.6rem;
 
-            @media only screen and (min-width: 375px) {
+            @media only screen and (min-width: 376px) {
               font-size: 6.6rem;
               line-height: 8rem;
             }
@@ -820,7 +820,7 @@ html {
             line-height: 130.02%;
             text-align: center;
 
-            @media only screen and (min-width: 375px) {
+            @media only screen and (min-width: 376px) {
               font-size: 2.84rem;
             }
           }
@@ -831,7 +831,7 @@ html {
             margin-top: 3rem;
             flex-direction: column;
 
-            @media only screen and (min-width: 375px) {
+            @media only screen and (min-width: 376px) {
               flex-direction: row;
             }
 
@@ -849,7 +849,7 @@ html {
                   height: 10.3rem;
                   margin: 0 auto 1.3rem auto;
 
-                  @media only screen and (min-width: 375px) {
+                  @media only screen and (min-width: 376px) {
                     width: 16rem;
                     height: 16rem;
                     margin: 0 auto 1.6rem auto;
@@ -870,7 +870,7 @@ html {
                   margin-bottom: 1.6rem;
                   color: #ffffff;
 
-                  @media only screen and (min-width: 375px) {
+                  @media only screen and (min-width: 376px) {
                     font-size: 2.84rem;
                   }
                 }
@@ -886,7 +886,7 @@ html {
                   margin: auto;
                   text-align: center;
 
-                  @media only screen and (min-width: 375px) {
+                  @media only screen and (min-width: 376px) {
                     font-size: 1.4rem;
                     text-align: left;
                     white-space: nowrap;
@@ -907,7 +907,7 @@ html {
                   margin: 3.4rem auto 3.2rem auto;
                   max-width: 46.9rem;
 
-                  @media only screen and (min-width: 375px) {
+                  @media only screen and (min-width: 376px) {
                     font-size: 1.8rem;
                     margin: 5.3rem auto 0.7rem auto;
                     height: 18.6rem;
@@ -917,7 +917,7 @@ html {
                 > .fandf {
                   margin-left: 0.9rem;
 
-                  @media only screen and (min-width: 375px) {
+                  @media only screen and (min-width: 376px) {
                     margin-left: 2.1rem;
                   }
 
@@ -928,7 +928,7 @@ html {
                     color: #ffffff;
                     margin-bottom: 1rem;
 
-                    @media only screen and (min-width: 375px) {
+                    @media only screen and (min-width: 376px) {
                       font-size: 1.8rem;
                     }
                   }
@@ -957,7 +957,7 @@ html {
                         color: rgba(255, 255, 255, 0.7);
                         margin-left: 1.8em;
 
-                        @media only screen and (min-width: 375px) {
+                        @media only screen and (min-width: 376px) {
                           font-size: 1.8rem;
                         }
                       }
@@ -982,7 +982,7 @@ html {
             gap: 5.1rem;
             margin: 2rem 0;
 
-            @media only screen and (min-width: 375px) {
+            @media only screen and (min-width: 376px) {
               grid-template-columns: repeat(2, 1fr);
               gap: 7.56rem;
               margin: 5.8rem 0;
@@ -993,7 +993,7 @@ html {
               gap: 5.1rem;
               justify-self: center;
 
-              @media only screen and (min-width: 375px) {
+              @media only screen and (min-width: 376px) {
                 gap: 7.56rem;
               }
 
@@ -1001,7 +1001,7 @@ html {
                 width: 13.6rem;
                 height: 29.54rem;
 
-                @media only screen and (min-width: 375px) {
+                @media only screen and (min-width: 376px) {
                   width: 20.1rem;
                   height: 43.54rem;
                 }
@@ -1028,7 +1028,7 @@ html {
         align-items: center;
         justify-content: center;
 
-        @media only screen and (min-width: 375px) {
+        @media only screen and (min-width: 376px) {
           height: 41.7rem;
         }
 
@@ -1041,7 +1041,7 @@ html {
           color: #ffffff;
           position: relative;
 
-          @media only screen and (min-width: 375px) {
+          @media only screen and (min-width: 376px) {
             font-size: 6.6rem;
             line-height: 8rem;
           }
@@ -1063,7 +1063,7 @@ html {
         margin: 1rem auto 1.5rem auto;
         padding: 0 2.6rem;
 
-        @media only screen and (min-width: 375px) {
+        @media only screen and (min-width: 376px) {
           margin: 4.3rem auto 7.4rem auto;
           padding: 0;
         }
@@ -1074,7 +1074,7 @@ html {
           line-height: 130.02%;
           text-align: center;
 
-          @media only screen and (min-width: 375px) {
+          @media only screen and (min-width: 376px) {
             font-size: 2.84rem;
           }
         }
@@ -1087,7 +1087,7 @@ html {
         max-width: 67rem;
         margin: 0 auto 5.8rem auto;
 
-        @media only screen and (min-width: 375px) {
+        @media only screen and (min-width: 376px) {
           grid-template-columns: repeat(3, 1fr);
           gap: 3rem;
         }
@@ -1097,7 +1097,7 @@ html {
           height: 32.3rem;
           justify-self: center;
 
-          @media only screen and (min-width: 375px) {
+          @media only screen and (min-width: 376px) {
             width: 20.3rem;
             height: 43.9rem;
           }
@@ -1115,7 +1115,7 @@ html {
       height: 91rem;
       flex-direction: column;
 
-      @media only screen and (min-width: 375px) {
+      @media only screen and (min-width: 376px) {
         flex-direction: row;
         height: 102.3rem;
       }
@@ -1130,7 +1130,7 @@ html {
         align-items: center;
         justify-content: center;
 
-        @media only screen and (min-width: 375px) {
+        @media only screen and (min-width: 376px) {
           width: 45.78%;
           height: 100%;
         }
@@ -1153,7 +1153,7 @@ html {
           max-width: 34.3rem;
           position: relative;
 
-          @media only screen and (min-width: 375px) {
+          @media only screen and (min-width: 376px) {
             font-size: 6.6rem;
             line-height: 8rem;
           }
@@ -1165,7 +1165,7 @@ html {
         height: 53.5rem;
         padding: 7.1rem 2.4rem 5rem 4.1rem;
 
-        @media only screen and (min-width: 375px) {
+        @media only screen and (min-width: 376px) {
           width: 54.22%;
           height: 100%;
           padding: 9.5rem 5.4rem 8.1rem 5.4rem;
@@ -1181,7 +1181,7 @@ html {
           font-size: 1.4rem;
           line-height: 130.02%;
 
-          @media only screen and (min-width: 375px) {
+          @media only screen and (min-width: 376px) {
             font-size: 2.84rem;
           }
 
@@ -1189,7 +1189,7 @@ html {
           &:nth-of-type(2) {
             margin-bottom: 2.5rem;
 
-            @media only screen and (min-width: 375px) {
+            @media only screen and (min-width: 376px) {
               margin-bottom: 4.4rem;
             }
           }
@@ -1209,7 +1209,7 @@ html {
             gap: 1rem;
             margin-left: 0.5em;
 
-            @media only screen and (min-width: 375px) {
+            @media only screen and (min-width: 376px) {
               font-size: 2.84rem;
             }
 
@@ -1224,7 +1224,7 @@ html {
     .product-solving-problems {
       margin: 2rem 0;
 
-      @media only screen and (min-width: 375px) {
+      @media only screen and (min-width: 376px) {
         margin: 5.8rem 0;
       }
       .container {
@@ -1239,7 +1239,7 @@ html {
           padding: 2.2rem 0 4.4rem 0;
           margin-top: 1rem;
 
-          @media only screen and (min-width: 375px) {
+          @media only screen and (min-width: 376px) {
             margin-top: 3.9rem;
             padding: 7.3rem 2.2rem 5.2rem 8.2rem;
           }
@@ -1249,7 +1249,7 @@ html {
               display: flex;
               flex-direction: column-reverse;
 
-              @media only screen and (min-width: 375px) {
+              @media only screen and (min-width: 376px) {
                 flex-direction: row;
               }
 
@@ -1264,7 +1264,7 @@ html {
                   font-size: 1.4rem;
                   line-height: 130.02%;
 
-                  @media only screen and (min-width: 375px) {
+                  @media only screen and (min-width: 376px) {
                     font-size: 2.84rem;
                   }
 
@@ -1283,7 +1283,7 @@ html {
                 color: rgba(#000000, 0.5);
                 text-align: center;
 
-                @media only screen and (min-width: 375px) {
+                @media only screen and (min-width: 376px) {
                   font-size: 7.3rem;
                   text-align: left;
                 }
@@ -1296,7 +1296,7 @@ html {
               justify-content: center;
               margin-top: 5.8rem;
 
-              @media only screen and (min-width: 375px) {
+              @media only screen and (min-width: 376px) {
                 display: flex;
               }
 
